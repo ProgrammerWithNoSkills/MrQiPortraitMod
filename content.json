@@ -1,0 +1,58 @@
+{
+    "Format": "2.6.0",
+    "Changes": [
+        {"//comment": "Vanilla Portraits"},
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/MrQi",
+            "FromFile": "assets/MrQiPortrait.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/MrQi",
+            "FromFile": "assets/MrQiPortraitWinter.png",
+            "When": {
+                "Season": "Winter"
+            }
+        },
+        {"//comment": "Modded Portraits"},
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/AngelOfStars.Mrqifriendable_TheMrQi",
+            "FromFile": "assets/MrQiPortrait.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/AngelOfStars.Mrqifriendable_TheMrQi",
+            "FromFile": "assets/MrQiPortraitMarried.png",
+            "When": {
+                "Relationship:AngelOfStars.Mrqifriendable_TheMrQi": "Married"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/AngelOfStars.Mrqifriendable_TheMrQi",
+            "FromFile": "assets/MrQiPortraitFD.png",
+			"Update": "OnLocationChange",
+            "When": {
+                "Relationship:AngelOfStars.Mrqifriendable_TheMrQi": "Married",
+                "DayEvent": "flower dance",
+				"LocationName": "Forest, temp"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/AngelOfStars.Mrqifriendable_TheMrQi_Winter",
+            "FromFile": "assets/MrQiPortraitWinter.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/AngelOfStars.Mrqifriendable_TheMrQi_Winter",
+            "FromFile": "assets/MrQiPortraitWinterMarried.png",
+            "When": {
+                "Relationship:AngelOfStars.Mrqifriendable_TheMrQi": "Married"
+            }
+        }
+    ]
+}
+
